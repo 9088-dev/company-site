@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>サポート - 合同会社9088</title>
+  <title>サポート - 9088ev</title>
   <style>
     body {
       font-family: sans-serif;
@@ -15,21 +15,27 @@
       display: flex;
       justify-content: center;
     }
+
     main {
       max-width: 800px;
       width: 100%;
       background-color: #fff;
       padding: 2em;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       font-size: 1.8em;
       border-bottom: 2px solid #333;
       padding-bottom: 0.3em;
       margin-top: 0;
     }
-    section { margin-top: 1.5em; }
+
+    section {
+      margin-top: 1.5em;
+    }
+
     .card {
       background: #fafafa;
       border: 1px solid #eee;
@@ -37,21 +43,50 @@
       padding: 1em 1.2em;
       margin-top: 1em;
     }
-    details { border: 1px solid #eee; border-radius: 8px; padding: .8em 1em; background: #fcfcfc; }
-    details + details { margin-top: .6em; }
-    summary { cursor: pointer; font-weight: 600; }
-    code, pre {
+
+    details {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 0.8em 1em;
+      background: #fcfcfc;
+    }
+
+    details + details {
+      margin-top: 0.6em;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    pre {
       background: #f4f4f4;
       border: 1px solid #e8e8e8;
       border-radius: 6px;
-      padding: .6em .8em;
-      display: block;
+      padding: 0.8em 1em;
       overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
     }
-    ul.inline { padding-left: 1.2em; }
-    .muted { color:#666; font-size:.95em; }
-    a { color:#0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
+    ul.inline {
+      padding-left: 1.2em;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -59,66 +94,94 @@
     <h1>サポート</h1>
 
     <section>
-      <p>本ページは、当社が提供する各種アプリ（例：「とやまクイズ」）に関するサポート情報・お問い合わせ窓口です。</p>
-      <p class="muted">プライバシーに関する方針は <a href="/privacy.html">プライバシーポリシー</a> をご確認ください。</p>
+      <p>
+        本ページは、9088.devが提供するアプリ
+        「とやまクイズ」に関するサポート情報およびお問い合わせ窓口です。
+      </p>
+      <p class="muted">
+        情報の取り扱いについては
+        <a href="/privacy.html">プライバシーポリシー</a>
+        をご確認ください。
+      </p>
     </section>
 
     <section>
-      <h2>よくある質問（FAQ）</h2>
+      <h2>よくある質問</h2>
 
       <details>
-        <summary>音が出ない / BGM が再生されない</summary>
+        <summary>音が出ない、BGMが再生されない</summary>
         <ul class="inline">
-          <li>端末のサイレントモード・音量設定をご確認ください。</li>
-          <li>アプリ内のサウンド設定が「オン」になっているか確認してください。</li>
-          <li>再起動後も改善しない場合は、「不具合報告テンプレート」を添えてご連絡ください。</li>
+          <li>端末のサイレントモードと音量設定をご確認ください。</li>
+          <li>アプリ内のサウンド設定がオンになっているかご確認ください。</li>
+          <li>アプリや端末を再起動すると改善する場合があります。</li>
+          <li>改善しない場合は、下記の不具合報告内容を添えてご連絡ください。</li>
         </ul>
       </details>
 
       <details>
-        <summary>アプリが起動しない / 強制終了する</summary>
+        <summary>アプリが起動しない、または強制終了する</summary>
         <ul class="inline">
-          <li>最新バージョンへのアップデートをお試しください。</li>
-          <li>端末の再起動・空き容量の確保で改善する場合があります。</li>
+          <li>App Storeから最新バージョンへ更新してください。</li>
+          <li>端末を再起動してください。</li>
+          <li>端末の空き容量をご確認ください。</li>
           <li>改善しない場合は、発生手順と端末情報を添えてご連絡ください。</li>
         </ul>
       </details>
-
     </section>
 
     <section>
       <h2>お問い合わせ</h2>
       <div class="card">
-        <p>メールでのサポート窓口：</p>
-        <p><strong>support[at]9088.llc</strong>（<span class="muted">[at] を @ に変更してください</span>）</p>
-        <p class="muted">※ 迷惑メール対策のため記法を変えています。フォーム運用をご希望の場合は、このページに問い合わせフォームを設置することも可能です。</p>
+        <p>メールでのお問い合わせ：</p>
+        <p>
+          <strong>
+            <a href="mailto:support@9088.dev">support@9088.dev</a>
+          </strong>
+        </p>
+        <p class="muted">
+          内容によっては回答までお時間をいただく場合があります。
+        </p>
       </div>
     </section>
 
     <section>
-      <h2>不具合報告テンプレート</h2>
-      <p>以下をコピーし、必要事項をご記入の上お送りください。</p>
-      <pre>【アプリ名】例：とやまクイズ
-【アプリのバージョン】例：1.0.0（設定画面→アプリ情報）
-【発生日時】例：2025-08-09 19:30
-【端末名 / OS】例：iPhone 13 / iOS 17.5
-【発生場所】例：タイトル画面 → スタートをタップ
-【発生手順】例：
-  1) アプリを起動
-  2) スタートをタップ
-  3) 3問目の正解後にフリーズ
-【期待する動作】例：次の問題に進む
-【実際の動作】例：画面が反応しない
-【スクリーンショット/動画】（任意）
-【その他】（任意）</pre>
+      <h2>不具合報告</h2>
+      <p>
+        不具合についてお問い合わせいただく際は、可能な範囲で以下の情報をお知らせください。
+      </p>
+
+      <pre>【アプリ名】とやまクイズ
+【アプリのバージョン】
+【発生日時】
+【端末名】
+【OSのバージョン】
+【発生した画面】
+【発生手順】
+1.
+2.
+3.
+
+【期待していた動作】
+【実際に発生した動作】
+【スクリーンショットまたは動画】任意
+【その他】任意</pre>
     </section>
 
     <section>
-      <h2>端末情報・バージョンの確認方法</h2>
+      <h2>端末情報の確認方法</h2>
       <ul class="inline">
-        <li><strong>アプリのバージョン：</strong>アプリ内「設定」または「ヘルプ」→「アプリ情報」。</li>
-        <li><strong>iOS バージョン：</strong>設定→一般→情報→iOSバージョン。</li>
-        <li><strong>端末名：</strong>設定→一般→情報→機種名。</li>
+        <li>
+          <strong>iOSのバージョン：</strong>
+          「設定」→「一般」→「情報」→「iOSバージョン」
+        </li>
+        <li>
+          <strong>端末名：</strong>
+          「設定」→「一般」→「情報」→「機種名」
+        </li>
+        <li>
+          <strong>アプリのバージョン：</strong>
+          App Storeの「とやまクイズ」ページ、またはアプリ内の情報画面
+        </li>
       </ul>
     </section>
 
@@ -126,10 +189,11 @@
       <h2>関連リンク</h2>
       <ul>
         <li><a href="/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="/">9088.dev トップページ</a></li>
       </ul>
     </section>
 
-    <p class="muted">【最終更新日】2025年8月9日</p>
+    <p class="muted">【最終更新日】2026年7月19日</p>
   </main>
 </body>
 </html>
